@@ -1,0 +1,54 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+
+#clockDisplay {
+	position: relative;
+	display: inline-block;
+	color: #0099ff;
+	width: auto;
+	top: 30vh;
+	border: 15px solid #8c8c8c;
+	border-radius: 5px;
+	padding: 2% 10%;
+	font-family: 'Orbitron', sans-serif;
+
+}
+
+#clockDisplay p {
+	margin: 0;
+	font-size: 5vw;
+}
+
+#clockDisplay > div {
+	display: inline-block;
+	font-weight: bold;
+}
+
+#clockDisplay #periodDisplay {
+	position: relative;
+	bottom: 50px;
+	font-size: 2vw;
+}
+
+#clockDisplay #hoursMinutesDisplay {
+	font-size: 15vw;
+}
+
+#clockDisplay #secondsDisplay {
+	font-size: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+	#clockDisplay #periodDisplay {
+	position: relative;
+	bottom: 25px;
+}
+
+@media screen and (max-width: 520px) {
+	#clockDisplay #periodDisplay {
+	position: relative;
+	bottom: 15px;
+}
+

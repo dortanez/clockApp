@@ -3,7 +3,8 @@ body {
 	text-align: center;
 }
 
-#clockDisplay {
+/*DIGITAL CLOCK**************************************/
+/*.digitalClock #clockDisplay {
 	position: relative;
 	display: inline-block;
 	color: #0099ff;
@@ -11,44 +12,100 @@ body {
 	top: 30vh;
 	border: 15px solid #8c8c8c;
 	border-radius: 5px;
-	padding: 2% 10%;
+	padding: 2% 5%;
 	font-family: 'Orbitron', sans-serif;
 
 }
 
-#clockDisplay p {
+.digitalClock #clockDisplay p {
 	margin: 0;
 	font-size: 5vw;
 }
 
-#clockDisplay > div {
+.digitalClock #clockDisplay > div {
 	display: inline-block;
 	font-weight: bold;
 }
 
-#clockDisplay #periodDisplay {
+.digitalClock #clockDisplay #periodDisplay {
 	position: relative;
 	bottom: 50px;
 	font-size: 2vw;
 }
 
-#clockDisplay #hoursMinutesDisplay {
+.digitalClock #clockDisplay #hoursMinutesDisplay {
 	font-size: 15vw;
 }
 
-#clockDisplay #secondsDisplay {
+.digitalClock #clockDisplay #secondsDisplay {
 	font-size: 5vw;
 }
 
 @media screen and (max-width: 800px) {
-	#clockDisplay #periodDisplay {
+	.digitalClock #clockDisplay #periodDisplay {
 	position: relative;
 	bottom: 25px;
 }
 
 @media screen and (max-width: 520px) {
-	#clockDisplay #periodDisplay {
+	.digitalClock #clockDisplay #periodDisplay {
 	position: relative;
 	bottom: 15px;
+}*/
+
+/*ANALOG CLOCK*********************************************/
+.analogClock #clockDisplay {
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	margin: auto;
+	border-radius: 50%;
+	position: relative;
+	top: 10vh;
+	border: 15px solid #8c8c8c;
+
 }
 
+.hourHand {
+	width: 8px;
+	height: 120px;
+	background-color: black;
+	position: absolute;
+	top: 70px;
+	left: 180px;
+	transform-origin: 50% 100%;
+	transition: transform .5s ease-in-out;
+}
+
+.minuteHand {
+	width: 8px;
+	height: 155px;
+	background-color: black;
+	position: absolute;
+	top: 35px;
+	left: 180px;
+	transform-origin: 50% 100%;
+	transition: transform .5s ease-in-out;
+}
+
+.secondHand {
+	width: 4px;
+	height: 155px;
+	background-color: black;
+	position: absolute;
+	top: 35px;
+	left: 180px;
+	transform-origin: 50% 100%;
+	transition: transform .5s ease-in-out;
+}
+
+.pin {
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	margin: auto;
+	position: absolute;
+	top: 180px;
+	left: 175px;
+	border-radius: 50%;
+}

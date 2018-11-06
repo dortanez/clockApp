@@ -51,3 +51,34 @@ function digitalClock() {
 }
 
 digitalClock();
+
+
+
+function analogClock() {
+
+	var ctx = document.getElementsByClassName("analogClock");
+	var radius = ctx.height / 2;
+
+	var now = new Date();
+
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var period = "AM";
+
+	var secPosition = seconds * 6;
+	var minPosition = minutes * 6;
+	var hrPosition = hours * 30;
+
+	document.getElementsByClassName("secondHand")[0].style.transform = "rotate(" + secPosition + "deg)";
+
+	document.getElementsByClassName("minuteHand")[0].style.transform = "rotate(" + minPosition + "deg)";
+
+	document.getElementsByClassName("hourHand")[0].style.transform = "rotate(" + hrPosition + "deg)";
+
+
+	setTimeout(analogClock, 1000);
+
+}
+
+analogClock();

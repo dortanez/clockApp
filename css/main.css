@@ -3,65 +3,67 @@ body {
 	text-align: center;
 }
 
+button {
+	margin: 2% 15%;
+	background-color: black;
+	color: #0099ff;
+	padding: 5px;
+
+}
+
 /*DIGITAL CLOCK**************************************/
-/*.digitalClock #clockDisplay {
+.digitalClock {
 	position: relative;
 	display: inline-block;
 	color: #0099ff;
 	width: auto;
-	top: 30vh;
+	top: 70px;
 	border: 15px solid #8c8c8c;
 	border-radius: 5px;
 	padding: 2% 5%;
 	font-family: 'Orbitron', sans-serif;
+	margin: 0 50px;
 
 }
 
-.digitalClock #clockDisplay p {
+.digitalClock p {
 	margin: 0;
-	font-size: 5vw;
+	font-size: 20px;
 }
 
-.digitalClock #clockDisplay > div {
+.digitalClock > div {
 	display: inline-block;
 	font-weight: bold;
 }
 
-.digitalClock #clockDisplay #periodDisplay {
+.digitalClock #periodDisplay {
 	position: relative;
 	bottom: 50px;
-	font-size: 2vw;
+	font-size: 10px;
 }
 
-.digitalClock #clockDisplay #hoursMinutesDisplay {
-	font-size: 15vw;
+.digitalClock #hoursMinutesDisplay {
+	font-size: 100px;
 }
 
-.digitalClock #clockDisplay #secondsDisplay {
-	font-size: 5vw;
+.digitalClock #secondsDisplay {
+	font-size: 25px;
 }
 
-@media screen and (max-width: 800px) {
-	.digitalClock #clockDisplay #periodDisplay {
-	position: relative;
-	bottom: 25px;
+.hide {
+	display: none;
 }
 
-@media screen and (max-width: 520px) {
-	.digitalClock #clockDisplay #periodDisplay {
-	position: relative;
-	bottom: 15px;
-}*/
 
 /*ANALOG CLOCK*********************************************/
-.analogClock #clockDisplay {
+.analogClock {
 	height: 400px;
 	width: 400px;
-	background-color: white;
-	margin: auto;
+	background-color: black;
 	border-radius: 50%;
 	position: relative;
-	top: 10vh;
+	top: 50px;
+	margin: 0 auto;
 	border: 15px solid #8c8c8c;
 
 }
@@ -69,7 +71,7 @@ body {
 .hourHand {
 	width: 8px;
 	height: 120px;
-	background-color: black;
+	background-color: #0099ff;
 	position: absolute;
 	top: 70px;
 	left: 180px;
@@ -80,7 +82,7 @@ body {
 .minuteHand {
 	width: 8px;
 	height: 155px;
-	background-color: black;
+	background-color: #0099ff;
 	position: absolute;
 	top: 35px;
 	left: 180px;
@@ -91,7 +93,7 @@ body {
 .secondHand {
 	width: 4px;
 	height: 155px;
-	background-color: black;
+	background-color: #0099ff;
 	position: absolute;
 	top: 35px;
 	left: 180px;
@@ -102,10 +104,18 @@ body {
 .pin {
 	width: 20px;
 	height: 20px;
-	background-color: black;
+	background-color: #0099ff;
 	margin: auto;
 	position: absolute;
 	top: 180px;
 	left: 175px;
 	border-radius: 50%;
 }
+
+/*ALARM***************************************************/
+.alarm {
+	position: relative;
+	margin: 50px;
+	top: 50px;
+}
+

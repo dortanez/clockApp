@@ -26,7 +26,7 @@ function digitalClock() {
 	var periodDisplay = document.getElementById("periodDisplay");
 	periodDisplay.innerText = period;
 	var hoursMinutesDisplay = document.getElementById("hoursMinutesDisplay");
-	hoursMinutesDisplay.innerText = hours + ":" + minutes;
+	hoursMinutesDisplay.textContent = hours + ":" + minutes;
 	var secondsDisplay = document.getElementById("secondsDisplay");
 	secondsDisplay.innerText = seconds;
 
@@ -82,3 +82,13 @@ function analogClock() {
 }
 
 analogClock();
+
+function hideAnalog() {
+	document.getElementsByClassName("digitalClock")[0].className = "digitalClock";
+	document.getElementsByClassName("analogClock")[0].className = "analogClock hide";
+}
+
+function hideDigital() {
+	document.getElementsByClassName("digitalClock")[0].className = "digitalClock hide";
+	document.getElementsByClassName("analogClock")[0].className = "analogClock";
+}

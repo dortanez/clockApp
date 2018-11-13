@@ -3,7 +3,7 @@ body {
 	text-align: center;
 }
 
-button {
+body > button {
 	margin: 2% 15%;
 	background-color: black;
 	color: #0099ff;
@@ -17,12 +17,12 @@ button {
 	display: inline-block;
 	color: #0099ff;
 	width: auto;
-	top: 70px;
+	top: 20px;
 	border: 15px solid #8c8c8c;
 	border-radius: 5px;
 	padding: 2% 5%;
 	font-family: 'Orbitron', sans-serif;
-	margin: 0 50px;
+	margin: 17.5px 50px;
 
 }
 
@@ -57,12 +57,12 @@ button {
 
 /*ANALOG CLOCK*********************************************/
 .analogClock {
-	height: 400px;
-	width: 400px;
+	height: 300px;
+	width: 300px;
 	background-color: black;
 	border-radius: 50%;
 	position: relative;
-	top: 50px;
+	top: 10px;
 	margin: 0 auto;
 	border: 15px solid #8c8c8c;
 
@@ -70,33 +70,33 @@ button {
 
 .hourHand {
 	width: 8px;
-	height: 120px;
+	height: 80px;
 	background-color: #0099ff;
 	position: absolute;
-	top: 70px;
-	left: 180px;
+	top: 55px;
+	left: 130px;
 	transform-origin: 50% 100%;
 	transition: transform .5s ease-in-out;
 }
 
 .minuteHand {
 	width: 8px;
-	height: 155px;
+	height: 115px;
 	background-color: #0099ff;
 	position: absolute;
-	top: 35px;
-	left: 180px;
+	top: 20px;
+	left: 130px;
 	transform-origin: 50% 100%;
 	transition: transform .5s ease-in-out;
 }
 
 .secondHand {
-	width: 4px;
-	height: 155px;
+	width: 3px;
+	height: 115px;
 	background-color: #0099ff;
 	position: absolute;
-	top: 35px;
-	left: 180px;
+	top: 20px;
+	left: 130px;
 	transform-origin: 50% 100%;
 	transition: transform .5s ease-in-out;
 }
@@ -107,15 +107,28 @@ button {
 	background-color: #0099ff;
 	margin: auto;
 	position: absolute;
-	top: 180px;
-	left: 175px;
+	top: 125px;
+	left: 125px;
 	border-radius: 50%;
 }
 
 /*ALARM***************************************************/
 .alarm {
 	position: relative;
-	margin: 50px;
-	top: 50px;
+	margin: 30px;
+	top: 5px;
+}
+
+.alarm button {
+	background-color: black;
+	color: #0099ff;
+	padding: 5px;
+	font-size: 10px;
+	position: relative;
+	bottom: 2px;
+}
+
+.alarm #alarmSet {
+	margin: 10px;
 }
 

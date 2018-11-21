@@ -21,8 +21,15 @@
 	</head>
 	<body>
 
-		<button onclick="hideAnalog()">Digital</button>
-		<button onclick="hideDigital()">Analog</button>
+		<div class="btns" id="clockBtns">
+			<button onclick="showDigital()">Digital</button>
+			<button onclick="showAnalog()">Analog</button>
+		</div>
+
+		<div class="btns">
+			<button onclick="showTimer()">Timer</button>
+			<button>Stopwatch</button>
+		</div>
 
 		<div class="digitalClock">
 			<p id="weekDayDisplay"></p>
@@ -39,6 +46,21 @@
 			<div class="pin"></div>
 		</div>
 
+		<div class="timer hide">
+			<h1>Set Timer</h1>
+			<select name="hours" id="timerHrs">
+				<option selected disabled>HRS</option>
+			</select>
+			<select name="minutes" id="timerMins">
+				<option selected disabled>MINS</option>
+			</select>
+			<select name="seconds" id="timerSeconds">
+				<option selected disabled>SECS</option>
+			</select>
+			<button onclick="setTimer()">Set Timer</button>
+			<div id="timerSet"></div>
+		</div>
+
 		<div class="alarm">
 			<h1>Set Alarm Time</h1>
 			<select name="hours" id="alarmHrs"></select>
@@ -47,7 +69,7 @@
 				<option>AM</option>
 				<option>PM</option>
 			</select>
-			<button onclick="setTime()">Set Alarm</button>
+			<button onclick="setAlarm()">Set Alarm</button>
 			<div id="alarmSet"></div>
 		</div>
 
@@ -67,7 +89,9 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/alarmClock.js"></script>
+		<script type="text/javascript" src="js/alarm.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+
 	</body>
 </html>
 

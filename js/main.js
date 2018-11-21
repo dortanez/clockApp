@@ -83,12 +83,16 @@ function analogClock() {
 
 analogClock();
 
-function hideAnalog() {
+function showDigital() {
 	document.getElementsByClassName("digitalClock")[0].className = "digitalClock";
 	document.getElementsByClassName("analogClock")[0].className = "analogClock hide";
+	document.getElementsByClassName("alarm")[0].className = "alarm";
+	document.getElementsByClassName("timer")[0].className = "timer hide";
 }
 
-function hideDigital() {
+function showAnalog() {
 	document.getElementsByClassName("digitalClock")[0].className = "digitalClock hide";
 	document.getElementsByClassName("analogClock")[0].className = "analogClock";
+	document.getElementsByClassName("alarm")[0].className = "alarm";
+	document.getElementsByClassName("timer")[0].className = "timer hide";
 }

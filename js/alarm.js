@@ -31,7 +31,7 @@ function addOptions() {
 addOptions();
 
 
-function setTime() {
+function setAlarm() {
 
 	var selectedHr = hrSelect.options[hrSelect.selectedIndex].value;
 	var selectedMin = minSelect.options[minSelect.selectedIndex].value;
@@ -62,9 +62,6 @@ function setTime() {
 	}
 
 	},1000)
-
-	
-
 
 }
 

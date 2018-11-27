@@ -26,11 +26,6 @@
 			<button onclick="showAnalog()">Analog</button>
 		</div>
 
-		<div class="btns">
-			<button onclick="showTimer()">Timer</button>
-			<button>Stopwatch</button>
-		</div>
-
 		<div class="digitalClock">
 			<p id="weekDayDisplay"></p>
 			<div id="periodDisplay"></div>
@@ -44,21 +39,6 @@
 			<div class="hourHand"></div>
 			<div class="secondHand"></div>
 			<div class="pin"></div>
-		</div>
-
-		<div class="timer hide">
-			<h1>Set Timer</h1>
-			<select name="hours" id="timerHrs">
-				<option selected disabled>HRS</option>
-			</select>
-			<select name="minutes" id="timerMins">
-				<option selected disabled>MINS</option>
-			</select>
-			<select name="seconds" id="timerSeconds">
-				<option selected disabled>SECS</option>
-			</select>
-			<button onclick="setTimer()">Set Timer</button>
-			<div id="timerSet"></div>
 		</div>
 
 		<div class="alarm">
@@ -90,7 +70,6 @@
 
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/alarm.js"></script>
-		<script type="text/javascript" src="js/timer.js"></script>
 
 	</body>
 </html>
